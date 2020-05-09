@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Frank Ruhl Libre", serif;
     color: white;
 }
 
@@ -17,6 +16,9 @@ body {
     background: url(img/mountains_and_ashes___speed_painting_by_so_watt_dah4od2.jpg) no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
 }
 
 /* Header */
@@ -29,7 +31,7 @@ h1 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
     font-size: 26px;
-    letter-spacing: 4px;
+    letter-spacing: 20px;
 }
 
 /* Navbar */
@@ -46,13 +48,17 @@ nav {
 }
 
 .navbar-navigation {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
 .navbar-button {
     display: inline-block;
     width: 15%;
-    padding: 8px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .navbar-button:hover {
@@ -63,7 +69,9 @@ nav {
 /* Section */
 
 .tituloSeccion {
+    text-transform: uppercase;
     text-align: center;
+    letter-spacing: 5px;
     font-size: 20px;
     margin-top: 115px;
     margin-bottom: 10px;
@@ -71,12 +79,15 @@ nav {
 }
 
 h3 {
+    text-transform: uppercase;
     text-align: center;
+    letter-spacing: 5px;
     margin-bottom: 10px;
     text-shadow: #0e0e10 2px 0px 5px;
 }
 
 section {
+    font-family: 'Montserrat', sans-serif;
     width: 60%;
     margin: 0 auto;
 }
@@ -92,10 +103,11 @@ p {
 }
 
 footer {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
     width: 85%;
     height: 2em;
-    padding: 5px 0;
+    padding: 4px 0;
     text-align: center;
     margin: 20px auto;
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(26, 28, 30, 0.8) 43%, rgba(30, 33, 35, 0.8) 50%, rgba(25, 28, 29, 0.8) 58%, rgba(0, 0, 0, 0) 100%);
@@ -104,35 +116,49 @@ footer {
 /* INDEX */
 
 .figPortada img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 125px;
-    float: left;
+    transition-duration: 800ms;
+}
+
+.figPortada:hover img {
+    transform: translate(-390%, 0) scale(1.05);
+    transition: transform 800ms;
 }
 
 .figPortada {
     padding: 20px 20px;
+    position: relative;
+    border-radius: 15px;
+    transition-duration: 800ms;
 }
 
 .descripcionLibros {
-    display: inline-block;
+    display: block;
+    width: calc(100% - 160px);
+    margin-left: auto;
     height: 200px;
     text-align: justify;
-    margin: 0 20px;
-    width: 0%;
-    visibility: hidden;
-    overflow: hidden;
+    opacity: 0;
+    transition: 200ms;
 }
 
 .figPortada:hover figcaption {
-    transition: width 800ms ease-in-out;
-    width: calc(100% - 165px);
-    visibility: visible;
+    transition: 200ms;
+    transition-delay: 1000ms;
+    opacity: 1;
 }
 
 .figPortada:hover {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     transition-duration: 700ms;
-    transition-delay: 100ms;
+    
+    
 }
 
 /* GALERIA */
@@ -187,7 +213,13 @@ footer {
     margin-bottom: 50px;
 }
 
+.infoAlomancia p {
+    text-shadow: #0e0e10 2px 2px 3px;
+}
+
 .tituloMetales {
+    text-transform: uppercase;
+    letter-spacing: 5px;
     text-align: center;
     font-size: 20px;
     text-shadow: #0e0e10 2px 0px 5px;
