@@ -1,0 +1,254 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Frank Ruhl Libre", serif;
+    color: white;
+}
+
+/* Body */
+
+body {
+    margin-top: 97px;
+    min-width: 900px;
+    background-color: #353A3D;
+    background: url(img/mountains_and_ashes___speed_painting_by_so_watt_dah4od2.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 4px;
+}
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    background-color: #1e2123;
+    width: 100%;
+    box-shadow: #0e0e10 2px 0px 5px;
+    padding: 5px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.navbar-navigation {
+    text-align: center;
+}
+
+.navbar-button {
+    display: inline-block;
+    width: 15%;
+    padding: 8px 0;
+}
+
+.navbar-button:hover {
+    font-weight: bolder;
+    text-shadow: black 2px 2px 10px;
+}
+
+/* Section */
+
+.tituloSeccion {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 115px;
+    margin-bottom: 10px;
+    text-shadow: #0e0e10 2px 0px 5px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: #0e0e10 2px 0px 5px;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    text-shadow: #0e0e10 2px 0px 5px;
+}
+
+footer {
+    font-family: 'Dancing Script', cursive;
+    width: 85%;
+    height: 2em;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px auto;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(26, 28, 30, 0.8) 43%, rgba(30, 33, 35, 0.8) 50%, rgba(25, 28, 29, 0.8) 58%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* INDEX */
+
+.figPortada img {
+    width: 125px;
+    float: left;
+}
+
+.figPortada {
+    padding: 20px 20px;
+}
+
+.descripcionLibros {
+    display: inline-block;
+    height: 200px;
+    text-align: justify;
+    margin: 0 20px;
+    width: 0%;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.figPortada:hover figcaption {
+    transition: width 800ms ease-in-out;
+    width: calc(100% - 165px);
+    visibility: visible;
+}
+
+.figPortada:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+/* GALERIA */
+
+.galeriaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.columna {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.columna img:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
+/* PERSONAJES */
+
+.containerPersonaje {
+    padding: 30px;
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px rgba(255, 255, 255, 0.39) solid;
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.containerPersonaje:first-of-type {
+    margin-top: 40px;
+}
+
+.containerPersonaje img {
+    width: 100%;
+}
+
+/* METALES */
+
+.infoAlomancia {
+    margin-bottom: 50px;
+}
+
+.tituloMetales {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: #0e0e10 2px 0px 5px;
+}
+
+.info {
+    text-shadow: #0e0e10 2px 0px 5px;
+}
+
+.metalTexto {
+    float: none;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.imgMetal {
+    background-color: #7a7b88d8;
+    display: block;
+    float: right;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    border: #0e0e10 solid 1px;
+}
+
+.imgMetal img {
+    width: 150px;
+}
+
+p span {
+    display: block;
+    padding-top: 1em;
+}
+
+/* ASIDE */
+
+aside {
+    position: sticky;
+    bottom: 20px;
+    background-color: #1E2123;
+    box-shadow: #0e0e10 2px 0px 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.aside-img {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+}
+
+aside:active {
+    background-color: #5b6068;
+}
+
+aside:hover {
+    box-shadow: #0e0e10 3px 3px 10px;
+}
